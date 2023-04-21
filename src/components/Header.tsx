@@ -12,10 +12,18 @@ const Header = () => {
         </Link>
       </div>
       <div className="header_tabs">
-        <div className="header_tabs_tab">ACCUEIL</div>
-        <div className="header_tabs_tab">CONVENTIONS</div>
-        <div className="header_tabs_tab">L'ASSOCIATION</div>
-        <div className="header_tabs_tab">NOS ACTIVITÉS</div>
+        <Link className="link" to={"/"}>
+          <div className="header_tabs_tab">ACCUEIL</div>
+        </Link>
+        <Link className="link" to={"/conventions"}>
+          <div className="header_tabs_tab">CONVENTIONS</div>
+        </Link>
+        <Link className="link" to={"/association"}>
+          <div className="header_tabs_tab">L'ASSOCIATION</div>
+        </Link>
+        <Link className="link" to={"/activities"}>
+          <div className="header_tabs_tab">NOS ACTIVITÉS</div>
+        </Link>
       </div>
       <div className="header_contact">
         <button

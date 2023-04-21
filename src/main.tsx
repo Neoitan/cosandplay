@@ -3,12 +3,20 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Homepage from "./pages/homepage/Homepage";
+import Activities from "./pages/activities/Activities";
 import Error from "./pages/error/Error";
+
+import "./main.scss";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/activities",
+    element: <Activities />,
     errorElement: <Error />,
   },
 
