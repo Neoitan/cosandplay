@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap");
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  &_linker-logo {
+    width: 4%;
+  }
+
+  &_tabs {
+    display: flex;
+    flex-direction: row;
+
+    gap: 2em;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+
+    color: #e8e8e8;
+
+    &_tab {
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_contact-button {
+    background: #bbbbbb;
+    border-radius: 6px;
+
+    font-size: 20px;
+    line-height: 29px;
+
+    color: #434343;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    padding: 0.5em 1em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
