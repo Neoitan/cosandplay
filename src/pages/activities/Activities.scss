@@ -41,8 +41,8 @@
   &_pres {
     text-align: justify;
 
-    margin-left: 15em;
-    margin-right: 15em;
+    margin-left: 8em;
+    margin-right: 8em;
   }
 
   &_concours {
@@ -53,6 +53,14 @@
       font-weight: 400;
       font-size: 3em;
     }
+
+    &_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-left: 8em;
+      margin-right: 8em;
+    }
   }
 
   &_freeStages {
@@ -62,6 +70,13 @@
       font-style: normal;
       font-weight: 400;
       font-size: 3em;
+    }
+    &_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-left: 8em;
+      margin-right: 8em;
     }
   }
 
@@ -87,7 +102,7 @@
       display: flex;
       flex-wrap: wrap;
 
-      gap: 4em;
+      gap: 8em;
 
       & * {
         width: 300px;
@@ -102,6 +117,14 @@
       .karaokes_title,
       .justdance_title {
         font-size: 1.5em;
+        text-align: center;
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1em;
       }
     }
   }
@@ -114,6 +137,14 @@
       font-weight: 400;
       font-size: 3em;
     }
+
+    &_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-left: 8em;
+      margin-right: 8em;
+    }
   }
 
   &_parade {
@@ -123,6 +154,14 @@
       font-style: normal;
       font-weight: 400;
       font-size: 3em;
+    }
+
+    &_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-left: 8em;
+      margin-right: 8em;
     }
   }
 }

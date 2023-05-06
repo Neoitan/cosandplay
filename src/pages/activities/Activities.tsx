@@ -35,7 +35,7 @@ const Activities = () => {
 
         <div className="activities_concours">
           <div className="activities_concours_title">Les concours</div>
-          <div>
+          <div className="activities_concours_contents">
             <div>
               CosAndPlay propose aux organisateurs de conventions ou de
               rassemblements l’organisation d’un concours de cosplay donnant
@@ -71,7 +71,7 @@ const Activities = () => {
         </div>
         <div className="activities_freeStages">
           <div className="activities_freeStages_title">Les scènes libres</div>
-          <div>
+          <div className="activities_freeStages_contents">
             <div>
               De la même façon que pour les concours, CosAndPlay propose aux
               cosplayeurs de faire un passage sur scène sans les enjeux d’un
@@ -192,7 +192,7 @@ const Activities = () => {
         </div>
         <div className="activities_procession">
           <div className="activities_procession_title">Les défilés cosplay</div>
-          <div>
+          <div className="activities_procession_contents">
             Lors des conventions, il y a beaucoup de rassemblements de
             cosplayeurs pour parler, s’amuser, danser, mais une activités très
             plaisante reste de se balader en groupe dans les conventions. C’est
@@ -206,7 +206,7 @@ const Activities = () => {
           <div className="activities_parade_title">
             Les parades & rassemblements
           </div>
-          <div>
+          <div className="activities_parade_contents">
             L’organisation de parades ainsi que de rassemblements est également
             une activité que CosAndPlay propose. Les déambulations permettent
             aux participants de se rencontrer, d’exposer leurs travail, mais
