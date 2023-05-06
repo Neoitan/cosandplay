@@ -1,2 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800;900&display=swap");
+
 .activities {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+
+  text-align: center;
+
+  height: 100%;
+
+  margin: 0em 10em 4em 10em;
+
+  &_title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.8em;
+
+    letter-spacing: 0.1em;
+
+    &_subtitle {
+      font-weight: 400;
+      font-size: 0.3em;
+
+      letter-spacing: 0em;
+    }
+  }
+
+  &_concours,
+  &_freeStages,
+  &_secondariesStages,
+  &_procession,
+  &_parade {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2em;
+  }
+
+  &_pres {
+    text-align: justify;
+
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+
+  &_concours {
+    text-align: justify;
+    &_title {
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+    }
+  }
+
+  &_freeStages {
+    text-align: justify;
+    &_title {
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+    }
+  }
+
+  &_secondariesStages {
+    text-align: justify;
+
+    &_title {
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+    }
+    &_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+      margin-left: 8em;
+      margin-right: 8em;
+    }
+    &_content {
+      justify-content: center;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 4em;
+
+      & * {
+        width: 300px;
+      }
+
+      & .gaming_title,
+      .blindtest_title,
+      .quizz_title,
+      .poses_title,
+      .craft_title,
+      .interviews_title,
+      .karaokes_title,
+      .justdance_title {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  &_procession {
+    text-align: justify;
+    &_title {
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+    }
+  }
+
+  &_parade {
+    text-align: justify;
+    &_title {
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .activities_pres {
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .activities_pres {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+// RESPONSIVE MOBILE
+@media (max-width: 1000px) {
+  .activities_pres {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
 }

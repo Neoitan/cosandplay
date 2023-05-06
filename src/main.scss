@@ -3,6 +3,8 @@
 
 * {
   font-family: "Jost";
+
+  color: #434343;
 }
 
 .link,
@@ -13,10 +15,9 @@
 }
 
 .body {
-  background: linear-gradient(180deg, #544e6b 0%, #393c65 100%);
+  background: linear-gradient(180deg, #b3b0bb 0%, #d9d4e3 100%);
   display: flex;
   flex-direction: column;
 
   justify-content: space-between;
-  height: 100vh;
 }
