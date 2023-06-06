@@ -16,6 +16,13 @@
 
 .body {
   background: linear-gradient(180deg, #b3b0bb 0%, #d9d4e3 100%);
+  background-size: cover;
+
+  height: 100%;
+
+  margin: 0;
+  // background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
 

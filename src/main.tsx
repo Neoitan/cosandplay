@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Homepage from "./pages/homepage/Homepage";
 import Activities from "./pages/activities/Activities";
+import Conventions from "./pages/conventions/Conventions";
 import Error from "./pages/error/Error";
 
 import "./main.scss";
@@ -12,6 +13,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/conventions",
+    element: <Conventions />,
     errorElement: <Error />,
   },
   {

@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800;900&display=swap");
 
+.body {
+  height: 100%;
+}
+
 .activities {
   display: flex;
   flex-direction: column;
   gap: 5em;
 
   text-align: center;
-
-  height: 100%;
 
   margin: 0em 10em 4em 10em;
 

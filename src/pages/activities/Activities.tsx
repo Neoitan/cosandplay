@@ -4,7 +4,7 @@ import "./Activities.scss";
 const Activities = () => {
   return (
     <div className="body">
-      <Header />
+      <Header selectedTabIndex={3} />
       <div className="activities">
         <div className="activities_title">
           DÉCOUVREZ NOS ACTIVITÉS
