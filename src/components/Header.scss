@@ -25,14 +25,17 @@
     font-size: 15px;
     line-height: 29px;
 
-    color: #e8e8e8;
-
     &_tab {
       transition: all 0.2s ease-in-out;
+
+      color: #3f3f3f;
 
       &:hover {
         font-weight: 700;
         cursor: pointer;
+      }
+      &.true {
+        font-weight: 700;
       }
     }
   }

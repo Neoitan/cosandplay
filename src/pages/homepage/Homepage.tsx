@@ -13,44 +13,51 @@ import picture_homepage from "../../assets/images/draft.png";
 
 const Homepage = () => {
   return (
-    <div className="body">
-      <Header />
-      <div className="homepage">
-        <div className="homepage_content">
-          <div>
-            <div className="homepage_content_subtitle">BIENVENUE CHEZ</div>
-            <div className="homepage_content_title">COS AND PLAY</div>
-          </div>
-          <div className="homepage_content_links">
-            <div className="homepage_content_links_internals">
-              <button>
-                <img src={member} alt="" /> Découvrir nos membres
-              </button>
-              <button>
-                <img src={swords} alt="" /> Nos conventions
-              </button>
+    <div className="bodyhp">
+      <div className="body">
+        <img
+          className="hexaback rotating"
+          src="src/assets/images/hexaback.svg"
+          alt=""
+        />
+        <Header selectedTabIndex={0} />
+        <div className="homepage">
+          <div className="homepage_content">
+            <div>
+              <div className="homepage_content_subtitle">BIENVENUE CHEZ</div>
+              <div className="homepage_content_title">COS AND PLAY</div>
             </div>
-            <div className="homepage_content_links_sn">
-              <img
-                className="homepage_content_links_sn grow"
-                src={facebook}
-                alt=""
-              />
-              <img
-                className="homepage_content_links_sn grow"
-                src={instagram}
-                alt=""
-              />
-              <img
-                className="homepage_content_links_sn grow"
-                src={twitter}
-                alt=""
-              />
+            <div className="homepage_content_links">
+              <div className="homepage_content_links_internals">
+                <button>
+                  <img src={member} alt="" /> Découvrir nos membres
+                </button>
+                <button>
+                  <img src={swords} alt="" /> Nos conventions
+                </button>
+              </div>
+              <div className="homepage_content_links_sn">
+                <img
+                  className="homepage_content_links_sn grow"
+                  src={facebook}
+                  alt=""
+                />
+                <img
+                  className="homepage_content_links_sn grow"
+                  src={instagram}
+                  alt=""
+                />
+                <img
+                  className="homepage_content_links_sn grow"
+                  src={twitter}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="homepage_picture">
-          <img src={picture_homepage} alt="" />
+          <div className="homepage_picture">
+            <img src={picture_homepage} alt="" />
+          </div>
         </div>
       </div>
     </div>

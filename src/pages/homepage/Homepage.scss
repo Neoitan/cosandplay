@@ -1,24 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap");
+.hexaback {
+  position: absolute;
+  z-index: 0;
 
-* {
-  font-family: "Jost";
+  opacity: 0.3;
+  // left: -500px;
+  left: -20%;
+  top: 8%;
+  width: 40%;
 }
 
-.body {
-  background: linear-gradient(180deg, #544e6b 0%, #393c65 100%);
-  display: flex;
-  flex-direction: column;
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 100s linear infinite;
+}
 
-  justify-content: space-between;
+.bodyhp {
   height: 100vh;
 }
 
 .homepage {
+  z-index: 1;
   display: flex;
   flex-direction: row;
-
-  overflow-x: hidden;
 
   margin-left: 60px;
   margin-right: 60px;
@@ -27,7 +37,7 @@
   &_content {
     font-style: normal;
     font-weight: 400;
-    color: #b1afc7;
+    color: #3f3f3f;
 
     display: flex;
     flex-direction: column;
@@ -76,7 +86,6 @@
           // width: 336px;
           // height: 72px;
 
-          background: #bbbbbb;
           border-radius: 6px;
 
           font-size: 20px;
@@ -98,6 +107,7 @@
         display: flex;
         justify-content: space-between;
         width: 25%;
+
         & > img {
           margin: 10px;
           width: 100%;
@@ -114,7 +124,6 @@
       }
     }
   }
-
   &_picture {
     width: 50%;
     & > img {
