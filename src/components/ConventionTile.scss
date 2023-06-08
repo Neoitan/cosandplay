@@ -1,0 +1,53 @@
+.tile {
+  // background-color: blue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+
+  min-width: 25em;
+  max-width: 50em;
+
+  height: 35em;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+    .tile_button {
+      font-weight: bold;
+    }
+  }
+
+  &_button {
+    transition: all 0.2s ease-in-out;
+
+    width: 40%;
+    background-color: #cecce7e0;
+    margin-bottom: 3em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+
+    color: #000000;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+
+    border-radius: 12px;
+
+    &:hover {
+      font-size: 18px;
+      width: 45%;
+    }
+  }
+}
