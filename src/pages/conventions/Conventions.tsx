@@ -14,17 +14,24 @@ const Conventions = () => {
       <div className="body">
         <Header selectedTabIndex={1} />
         <div className="conventions">
-          <div className="conventions_part1">
-            <div className="conventions_part1_title">
+          <div className="conventions_actual">
+            <div className="conventions_actual_title">
               RETROUVER NOUS EN CONVENTION !
             </div>
-            <div className="conventions_part1_subtitle">
+            <div className="conventions_actual_subtitle">
               Découvrez ici les conventions et rassemblements à laquelle
               CosAndPlay fait parti ! Vous pourrez retrouver une fiche sur la
               convention ainsi que les dossiers d’inscriptions en cas de scène
               libre et concours.
             </div>
-            <div className="conventions_part1_tiles">
+            <div className="conventions_actual_tiles">
+              <ConventionTile
+                props={{
+                  tileName: "name of the tile",
+                  subtitle: "subtitle of the tile",
+                  link: pics1,
+                }}
+              />
               <ConventionTile
                 props={{
                   tileName: "name of the tile",
@@ -34,11 +41,12 @@ const Conventions = () => {
               />
             </div>
           </div>
-          <div className="conventions_part2">
-            <div className="conventions_part2_title">
+          <div className="conventions_past">
+            <div className="conventions_past_line"></div>
+            <div className="conventions_past_title">
               Nos anciennes participations en convention
             </div>
-            <div className="conventions_part2_tiles">
+            <div className="conventions_past_tiles">
               <ConventionTile
                 props={{
                   tileName: "second name",

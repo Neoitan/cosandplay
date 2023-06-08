@@ -17,6 +17,7 @@ class ConventionTile extends React.Component<{ props: any }> {
         {/* <div className="tile_name">{this.state.tileName}</div>
         <div className="tile_subtitle">{this.state.tileSubtitle}</div>
         <div className="tile_link">{this.state.tileLink}</div> */}
+        <div className="tile_button">Accéder à la convention</div>
       </div>
     );
   }
