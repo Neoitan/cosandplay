@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/homepage/Homepage";
 import Activities from "./pages/activities/Activities";
 import Conventions from "./pages/conventions/Conventions";
+import Contact from "./pages/contact/Contact";
+
 import Error from "./pages/error/Error";
 
 import "./main.scss";
@@ -23,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/activities",
     element: <Activities />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
     errorElement: <Error />,
   },
 
