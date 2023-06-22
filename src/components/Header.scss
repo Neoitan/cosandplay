@@ -38,6 +38,10 @@
     }
   }
 
+  &_contact_hide {
+    visibility: hidden;
+  }
+
   &_contact-button {
     background-color: #cecce7;
     border-radius: 6px;

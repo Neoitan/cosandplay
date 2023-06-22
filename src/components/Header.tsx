@@ -25,16 +25,19 @@ const Header = (props: any) => {
           <div className={"header_tabs_tab "}>NOS ACTIVITÉS</div>
         </Link>
       </div>
-      <div className="header_contact">
-        <button
-          className="header_contact-button"
-          onClick={() => {
-            console.log("CONTACT US");
-          }}
-        >
-          NOUS CONTACTER
-        </button>
-      </div>
+      {!props.contactus ? (
+        <div className="header_contact">
+          <Link className="link" to={"/contact"}>
+            <button className="header_contact-button">NOUS CONTACTER</button>
+          </Link>
+        </div>
+      ) : (
+        <div className="header_contact_hide">
+          <Link className="link" to={"/contact"}>
+            <button className="header_contact-button">NOUS CONTACTER</button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
